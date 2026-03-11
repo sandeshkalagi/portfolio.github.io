@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandesh Kalagi | Java Full Stack Developer</title>
+    <script src="portfolio.js"></script>
+    <meta
+      name="description"
+      content="Portfolio of Sandesh Kalagi, a final year CSE student and Java Full Stack Developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container navbar" aria-label="Primary">
+        <a class="logo" href="#hero">SandeshKalagi</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation menu</span>
+          ☰
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section container">
+        <div class="hero-content">
+          <p class="eyebrow">Final Year CSE Student</p>
+          <h1>Hi, I'm Sandesh Kalagi.</h1>
+          <p class="typing-wrapper">
+            <span id="typing-text" aria-live="polite"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-description">
+            I am a Java Full Stack Developer who builds reliable, responsive, and user-friendly web applications.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <h2>Skills</h2>
+        <p class="section-subtitle">Core stack and technologies I use for development.</p>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Java Full Stack</h3>
+            <ul>
+              <li>Core Java</li>
+              <li>Spring Boot</li>
+              <li>Hibernate / JPA</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Postman</li>
+              <li>VS Code / IntelliJ</li>
+              <li>REST API Development</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <h2>Projects</h2>
+        <p class="section-subtitle">Projects I built as part of my learning and development journey.</p>
+
+        <div class="filter-controls" role="group" aria-label="Filter projects by category">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="fullstack">Full Stack</button>
+          <button class="filter-button" data-filter="ai">AI/ML</button>
+          <button class="filter-button" data-filter="utility">Utility</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-category="fullstack">
+            <h3>Expense Tracker</h3>
+            <p>Track daily expenses, set budgets, and view monthly reports with a clean dashboard.</p>
+            <span class="tag">Full Stack</span>
+          </article>
+          <article class="project-card" data-category="ai">
+            <h3>AI Resume Auditor</h3>
+            <p>Analyzes resumes, highlights missing keywords, and suggests improvements for job roles.</p>
+            <span class="tag">AI/ML</span>
+          </article>
+          <article class="project-card" data-category="utility">
+            <h3>Currency Converter</h3>
+            <p>Converts currencies in real time with exchange-rate integration and responsive interface.</p>
+            <span class="tag">Utility</span>
+          </article>
+          <article class="project-card" data-category="ai">
+            <h3>CKD Prediction</h3>
+            <p>Predicts Chronic Kidney Disease risk from medical attributes using ML classification.</p>
+            <span class="tag">AI/ML</span>
+          </article>
+          <article class="project-card" data-category="fullstack">
+            <h3>Task Manager</h3>
+            <p>Manage tasks with priorities, due dates, and status tracking in a full-stack workflow app.</p>
+            <span class="tag">Full Stack</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <h2>Contact</h2>
+        <p class="section-subtitle">Let's connect and build something impactful.</p>
+        <div class="contact-links">
+          <p><strong>Name:</strong> Sandesh Kalagi</p>
+          <p><strong>Email:</strong> <a href="mailto:sandeshkalagi800@gmail.com">sandeshkalagi800@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/sandeshkalagi" target="_blank" rel="noreferrer">github.com/sandeshkalagi</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sandeshkalagi" target="_blank" rel="noreferrer">linkedin.com/in/sandeshkalagi</a></p>
+        </div>
+        <form class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Message</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Sandesh Kalagi. Java Full Stack Developer.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
